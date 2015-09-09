@@ -3,6 +3,7 @@ import FastClick                    from 'fastclick';
 import Context                      from 'famous/core/Context.js';
 import {App as ArvaApp}             from 'arva-js/core/App.js';
 import {Router}                     from 'arva-js/core/Router.js';
+import {Owner}                      from './models/Owner.js';
 
 /* Here we import all controllers we want to use in the app */
 import {HomeController}             from './controllers/HomeController.js';
@@ -26,5 +27,9 @@ export class App extends ArvaApp {
 
         /* Initialize the app with the Router and Famous Context */
         super(router, context);
+
+        window.owner = new Owner('test1');
+
+
     }
 }

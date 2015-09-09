@@ -15,7 +15,7 @@ async function start() {
 
     /* Create a Dependency Injection context with the wanted router and dataSource types.
      * If you want a DataSource other than Firebase, edit DefaultDataSource.js to return an instance of it. */
-    DefaultDataSource.setRoot('https://your-app-here.firebaseio.com');
+    DefaultDataSource.setRoot('https://mijntennisles.firebaseio.com/Schools/TennisUniversity');
     let context = createDefaultContext(ArvaRouter, DefaultDataSource);
 
     /* This creates a new instance of the App, which launches the Router
